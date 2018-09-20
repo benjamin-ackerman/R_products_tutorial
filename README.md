@@ -9,7 +9,7 @@ The theme of this tutorial is **Halloween candy**!  Using data from [this FiveTh
 
 ### 1) R package
 
-First, 
+First, we will build an R package that creates a barplot of the top-ranked candies using `ggplot2`.  To start, create a new R project
 
 To start, let's download the data:
 
