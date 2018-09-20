@@ -6,4 +6,6 @@ Slides describing overviews of these R products are available *here* (include li
 
 ----------
 
+The theme of this tutorial is **Halloween Candy**!  Using data from [this FiveThirtyEight blogpost](https://fivethirtyeight.com/features/the-ultimate-halloween-candy-power-ranking/), we will be  To start, let's download the data we will be using. Before making the R products, we will have to download the data from [FiveThirtyEight]
+
 ## 1) 
