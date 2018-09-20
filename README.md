@@ -14,8 +14,11 @@ First, we will build an R package that creates a barplot of the top-ranked candi
 1) Select "New R Project" in the drop down menu in the top right corner of the window
 2) Select "New Directory"
 <img src="figures/new_directory.png" width="500">
+
 3) Select "R Package"
+
 <img src="figures/r_package.png" width="500">
+
 4) Choose a name for your R package (I suggest naming it *halloween*, for simplicity), and specify where you want this new directory to live. *Make sure that "Create a git repository" is selected!*
 
 Let's download the data:
