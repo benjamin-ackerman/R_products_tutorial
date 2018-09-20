@@ -9,9 +9,16 @@ The theme of this tutorial is **Halloween candy**!  Using data from [this FiveTh
 
 ### 1) R package
 
-First, we will build an R package that creates a barplot of the top-ranked candies using `ggplot2`.  To start, create a new R project
+First, we will build an R package that creates a barplot of the top-ranked candies using `ggplot2`.  To start, create a new R project in RStudio:
 
-To start, let's download the data:
+1) Select "New R Project" in the drop down menu in the top right corner of the window
+2) Select "New Directory"
+<img src="figures/new_directory.png" width="500">
+3) Select "R Package"
+<img src="figures/r_package.png" width="500">
+4) Choose a name for your R package (I suggest naming it *halloween*, for simplicity), and specify where you want this new directory to live. *Make sure that "Create a git repository" is selected!*
+
+Let's download the data:
 
 1) Open the terminal and navigate to your directory of choice
 2) Run the following command to download the data into a `.csv` file: 
