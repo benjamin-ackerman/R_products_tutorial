@@ -41,16 +41,22 @@ Next, while we have the terminal open and directed into the "halloween" director
 1) Reads in the .csv file from FiveThirtyEight into R
 2) Saves the dataframe as an .RData object in the `data/` directory of the package.
 
-First, run the following code in the command line:
+To download and run the R script, you can enter the following code into the command line:
 
 ```
 mkdir data
 curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/master/R_package/download_data.R > download_data.R
+Rscript download_data.R
 ```
 
-Note that the code above does 3 things: 1) it creates a new directory within "halloween" called "data" using `mkdir`, 2) it uses `curl` to read the R script from this repo, 3) it uses `>` to funnel the output into a local file on your computer called 'download_data.R'. *A note for PC users:* you may need to use `wget` instead of `curl`.
+The code above does the following: 
 
-Next, open up the `download_data.R` script in your R project, and run its contents.  Check to make sure there's a file called `candy_data.RData` in your `data/` directory!
+1) `mkdir` creates a new directory within "halloween" called "data"
+2) `curl` reads the R script from this repo
+3) `>` funnels the output into a local file on your computer called 'download_data.R'. *A note for PC users:* you may need to use `wget` instead of `curl`.
+4) `Rscript` executes the script `download_data.R` from the command line (if this line doesn't work, you can open the R script manually in RStudio and run the commands).
+
+Now check to make sure there's a file called `candy_data.RData` in your `data/` directory!  If it's there, you can remove `download_data.R` from your project folder (you can enter `rm download_data.R` into the terminal console).
 
 #### Add the `plot_candy` function to the `halloween/R` directory
 The function that we will add to this R package, `plot_candy`, will take in a data frame, the number of top candies to plot, and the names of the columns specifying the candy name and ranking, and will produce a barplot from `ggplot` with the top ranked candies.  The function is *already written* and can be found in the `R_package` directory of this repo!  While still in the "halloween" directory in your terminal, run the following code to download the code into a .R file:
