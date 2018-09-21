@@ -12,7 +12,7 @@ First, we will build an R package that creates a barplot of the top-ranked candi
 
 #### Create a new R project in RStudio
 First, let's create a new local folder with an R package project:
-1) Select "New R Project" in the drop down menu in the top right corner of the window
+1) Open RStudio and select "New R Project" in the drop down menu in the top right corner of the window
 2) Select "New Directory"
 3) Select "R Package"
 4) Name your R package **halloween** (which will also be the name of the local folder housing the R package), and specify where you want this new directory to live locally. *Make sure that "Create a git repository" is selected!*
