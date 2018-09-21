@@ -90,7 +90,7 @@ Now that the R function and the data are added to the project, it's time to add 
 First, let's add documentation for the `plot_candy` function.  Notice that in the beginning of the `plot_candy.R` script, there is a section of code where every line starts with `#'`.  This section of the code actually *contains* the documentation for the function - all we have to do is generate the .Rd file!  In RStudio, we will follow these steps:
 
 1) Load the `devtools` package
-2) Run the following code in the console: `devtools::document()`
+2) Run the following code in the R console: `devtools::document()`
 
 There should now be a file in the `man/` folder called "plot_candy.Rd" (there will also be some code added to the 'NAMESPACE' file, but don't worry about that for now.)
 
