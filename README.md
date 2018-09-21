@@ -112,3 +112,12 @@ git push
 ```
 
 You have now successfully created an R package and pushed it to GitHub! :tada:
+
+----------
+
+## Make a website for your R package
+
+
+----------
+
+## Make a Shiny app using your R package
