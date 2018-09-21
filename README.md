@@ -24,7 +24,7 @@ Next, let's create a GitHub repository online and link it to the local directory
 
 1) Create a new repo called "halloween" (*do* add a README, do *not* add a .gitignore)
 2) Open a new Terminal/Git Bash console on your computer and make your way into your local "halloween" directory.
-3) Edit the code chunk below according to your own GitHub username, and then paste it line by line into the terminal (if you forgot to select "Create a git repository" when making your R project, don't worry!  Before you enter the code below, type `git init` to initialize the repo):
+3) Edit the code chunk below according to your own GitHub username, and then paste it line by line into the terminal (if you forgot to select "Create a git repository" when making your R project, don't worry!  Before you enter the code below, run `git init` to initialize the repo):
 
 ```
 git add .
@@ -36,7 +36,7 @@ git push -u origin master
 Double check on the GitHub website to verify that the files have been pushed!
 
 #### Download data for the R package
-Next, while we have the terminal open and directed into the "halloween" directory, let's download the data that we'll be including in the R package.  In order to attach the data to the R package, we will need to save it as a .RData file.  I've written an R script located in the `R_package` directory that does the following:
+Next, while we have the terminal open and directed into the "halloween" directory, let's download the data that we'll be attaching to the R package.  In order to actually attach the file with the data, we will need to have the data saved locally as a .RData file in the `data/` directory.  I've written an R script located in the `R_package` directory that does the following:
 
 1) Reads in the .csv file from FiveThirtyEight into R
 2) Saves the dataframe as an .RData object in the `data/` directory of the package.
