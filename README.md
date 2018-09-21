@@ -36,10 +36,11 @@ Now double check on the GitHub website to verify that the files have been pushed
 Next, while we have the terminal open and directed into the "halloween" directory, let's download the data that we'll be including in the R package by running the following command:
 
 ```
+mkdir data
 curl https://raw.githubusercontent.com/fivethirtyeight/data/master/candy-power-ranking/candy-data.csv > data/candy_data.csv
 ```
 
-Note that the code above does 3 things: 1) it uses `curl` to read the csv file from FiveThirtyEight's data repo, 2) it uses `>` to funnel the output into the file 'data/candy_data.csv', and 3) since the 'data' directory didn't already exist, it went ahead and created it!
+Note that the code above does 3 things: 1) it creates a new directory within "halloween" called "data" using `mkdir`, 2) it uses `curl` to read the csv file from FiveThirtyEight's data repo, 3) it uses `>` to funnel the output into the file 'data/candy_data.csv'.
 
 *a note for PC users, you may need to use `wget` instead of `curl`*
 
