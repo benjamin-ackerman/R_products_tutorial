@@ -123,6 +123,11 @@ You have now successfully created an R package and pushed it to GitHub! :tada:
 
 ## Make a website for your R package
 
+1. Add a README to your "halloween" repo.  You can find a pre-written README *here* (insert link, after writing the README) (*Use the code from above to download the README into a file in your local directory!*)
+2. Go to the "halloween" repo settings
+3. Under the section "GitHub Pages," select "master branch" as the source
+4. Choose a theme for your website.
+5. Go to the link and check out your R package's website!
 
 ----------
 
