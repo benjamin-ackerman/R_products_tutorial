@@ -45,7 +45,7 @@ First, run the following code in the command line:
 
 ```
 mkdir data
-https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/master/R_package/download_data.R > download_data.R
+curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/master/R_package/download_data.R > download_data.R
 ```
 
 Note that the code above does 3 things: 1) it creates a new directory within "halloween" called "data" using `mkdir`, 2) it uses `curl` to read the R script from this repo, 3) it uses `>` to funnel the output into a local file on your computer called 'download_data.R'. *A note for PC users:* you may need to use `wget` instead of `curl`.
