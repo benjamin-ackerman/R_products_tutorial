@@ -36,14 +36,21 @@ git push -u origin master
 Double check on the GitHub website to verify that the files have been pushed!
 
 #### Download data for the R package
-Next, while we have the terminal open and directed into the "halloween" directory, let's download the data that we'll be including in the R package by running the following command:
+Next, while we have the terminal open and directed into the "halloween" directory, let's download the data that we'll be including in the R package.  In order to attach the data to the R package, we will need to save it as a .RData file.  I've written an R script located in the `R_package` directory that does the following:
+
+1) Reads in the .csv file from FiveThirtyEight into R
+2) Saves the dataframe as an .RData object in the `data/` directory of the package.
+
+First, run the following code in the command line:
 
 ```
 mkdir data
-curl https://raw.githubusercontent.com/fivethirtyeight/data/master/candy-power-ranking/candy-data.csv > data/candy_data.csv
+curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/R_package/download_data.R > download_data.R
 ```
 
-Note that the code above does 3 things: 1) it creates a new directory within "halloween" called "data" using `mkdir`, 2) it uses `curl` to read the csv file from FiveThirtyEight's data repo, 3) it uses `>` to funnel the output into the file 'data/candy_data.csv'. *A note for PC users:* you may need to use `wget` instead of `curl`.
+Note that the code above does 3 things: 1) it creates a new directory within "halloween" called "data" using `mkdir`, 2) it uses `curl` to read the R script from this repo, 3) it uses `>` to funnel the output into a local file on your computer called 'download_data.R'. *A note for PC users:* you may need to use `wget` instead of `curl`.
+
+Next, open up the `download_data.R` script in your R project, and run its contents.  Check to make sure there's a file called `candy_data.RData` in your `data/` directory!
 
 #### Add the `plot_candy` function to the `halloween/R` directory
 The function that we will add to this R package, `plot_candy`, will take in a data frame, the number of top candies to plot, and the names of the columns specifying the candy name and ranking, and will produce a barplot from `ggplot` with the top ranked candies.  The function is *already written* and can be found in the `R_package` directory of this repo!  While still in the "halloween" directory in your terminal, run the following code to download the code into a .R file:
@@ -51,3 +58,20 @@ The function that we will add to this R package, `plot_candy`, will take in a da
 ```
 curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/master/R_package/plot_candy.R > R/plot_candy.R
 ```
+
+**Optional** If you would like to also get rid of the "hello.R" function, you can also do so from the command line by entering the following:
+
+```
+rm R/hello.R
+rm man/hello.Rd
+```
+
+The script `plot_candy.R` should now be in the `R` directory of your project's folder.
+
+#### Add documentation and build package!
+Now that the R function and the data are added to the project, it's time to add documentation!  We will need to add two types of documentation:
+1) Documentation for the `plot_candy` function (in the `man/` directory)
+2) Documentation for the R package (in the "DESCRIPTION" file)
+
+To add documentation to the `plot_candy` function, notice that in the beginning of the `plot_candy.R` script, there is a section of code where every line starts with `#'`.  This section of the code actually *contains* the documentation 
+First, let's go into the project settings to allow for some 
