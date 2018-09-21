@@ -13,19 +13,33 @@ First, we will build an R package that creates a barplot of the top-ranked candi
 
 1) Select "New R Project" in the drop down menu in the top right corner of the window
 2) Select "New Directory"
-<img src="figures/new_directory.png" width="500">
-
 3) Select "R Package"
+4) Name your R package **halloween**, and specify where you want this new directory to live locally. *Make sure that "Create a git repository" is selected!*
 
 <img src="figures/r_package.png" width="500">
 
-4) Choose a name for your R package (I suggest naming it *halloween*, for simplicity), and specify where you want this new directory to live. *Make sure that "Create a git repository" is selected!*
+Next, let's create a GitHub repository online and link it to the local directory.  You can do so by following the steps in [this GitHub help page](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/), or follow these condensed steps: 
 
-Let's download the data:
+1) Create a new repo called "halloween" (*do* add a README, do *not* add a .gitignore)
+2) Open the terminal and make your way into the "halloween" directory.
+3) Edit the code chunk below according to your own GitHub username, and then paste it line by line into the terminal (if you forgot to select "Create a git repository" when making your R project, don't worry!  Before you enter the code below, type `git init` to initialize the repo):
 
-1) Open the terminal and navigate to your directory of choice
-2) Run the following command to download the data into a `.csv` file: 
 ```
-curl https://raw.githubusercontent.com/fivethirtyeight/data/master/candy-power-ranking/candy-data.csv > candy_data.csv
+git add .
+git commit -m "first commit"
+git remote add origin git@github.com:[YOUR-USERNAME]/halloween.git
+git push -u origin master
 ```
-*PC users may need to use `wget` instead of `curl`*
+
+Now double check on the GitHub website to verify that the files have been pushed!
+
+Next, while we have the terminal open and directed into the "halloween" directory, let's download the data that we'll be including in the R package by running the following command:
+
+```
+curl https://raw.githubusercontent.com/fivethirtyeight/data/master/candy-power-ranking/candy-data.csv > data/candy_data.csv
+```
+
+Note that the code above does 3 things: 1) it uses `curl` to read the csv file from FiveThirtyEight's data repo, 2) it uses `>` to funnel the output into the file 'data/candy_data.csv', and 3) since the 'data' directory didn't already exist, it went ahead and created it!
+
+*a note for PC users, you may need to use `wget` instead of `curl`*
+
