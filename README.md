@@ -127,7 +127,7 @@ Now that we have created our R package, we can now create a webpage for it using
 #### 1. Add a README.md
 You may have noticed that our R package's repo thus far does not have a README. READMEs are *super* important to include with any repo in order to inform readers of any important details they should know for installing/using/modifying your code.  At the bottom of the repo's Code page, you'll notice an option to create a README for your repo:  
 
-<img src="figures/make_readme.png" width="500">
+<img src="figures/make_readme.png" width="700">
 
 There are two ways to go about adding a README file.  The first is to click on this button, manually type in the text, and click "Commit new file."  The other option is to create a new `.md` file locally in your "halloween" directory, add the new file and push it from the command line.  Whichever you prefer is fine!  For convenience, though, you can find a pre-written README *here* (insert link, after writing the README).
 
