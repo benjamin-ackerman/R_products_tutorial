@@ -122,7 +122,7 @@ You have now successfully created an R package and pushed it to GitHub! :tada: Y
 ----------
 
 ## Make a website for your R package
-Now that we have created our R package, we can now create a webpage for it using **GitHub pages**.  GitHub Pages takes the `README` of a repo and generates a website from it.  Websites for R packages can be incredibly useful for highlighting features of a package and easily marketing the package to its potential users.  We'll now walk through the steps to creating a webpage for our "halloween" R package:
+Now that we have created our R package, we can now create a webpage for it using **GitHub pages**.  GitHub Pages takes the `README` of a repo and generates a website from it.  Websites for R packages can be incredibly useful for highlighting features of a package and for easily marketing the package to its potential users.  We'll now walk through the steps to creating a webpage for our "halloween" R package:
 
 #### 1. Add a README.md
 You may have noticed that our R package's repo thus far does not have a `README`. `README`s are *super* important to include with any repo in order to inform readers of any important details they should know for installing/using/modifying your code.  At the bottom of the repo's Code page, you'll notice an option to create a `README` for your repo:  
