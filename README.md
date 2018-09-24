@@ -129,7 +129,7 @@ You may have noticed that our R package's repo thus far does not have a README. 
 
 <img src="figures/make_readme.png" width="700">
 
-There are two ways to go about adding a README file.  The first is to click on this button, manually type in the text, and click "Commit new file."  The other option is to create a new `.md` file locally in your "halloween" directory, add the new file and push it from the command line.  Whichever you prefer is fine!  For convenience, though, you can find a pre-written README *here* (insert link, after writing the README).
+There are two ways to go about adding a README file.  The first is to click on this button, manually type in the text, and click "Commit new file."  The other option is to create a new `.md` file locally in your "halloween" directory, add the new file using git and push it from the command line.  Whichever you prefer is fine!  For convenience, though, you can find a pre-written README *here* (insert link, after writing the README).
 
 #### 2. Turn the README.md into a webpage
 
