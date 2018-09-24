@@ -1,4 +1,4 @@
-# `halloween`: an R package for plotting Halloween candy popularity
+# halloween: an R package for plotting Halloween candy popularity
 
 Welcome to the website for my R package, `halloween`!  This package is created as part of the Advanced Data Science course at in the Biostatistics department at JHSPH.  The purpose of this package is to plot the top-ranked halloween candies using data from [this FiveThirtyEight blogpost](https://fivethirtyeight.com/features/the-ultimate-halloween-candy-power-ranking/).
 
