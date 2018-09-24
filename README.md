@@ -28,7 +28,7 @@ Let's start by creating a new local folder with an R package project:
 #### 2. Create a new GitHub repo
 Create a GitHub repository online and link it to the local directory of the R project.  You can do so by following the steps in [this GitHub help page](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/), or by following these condensed steps: 
 
-1) Create a new repo called "halloween" (*do* add a README, do *not* add a .gitignore)
+1) Create a new repo called "halloween" (do *not* add a README or a .gitignore)
 2) Open a new Terminal/Git Bash console on your computer and make your way into your local "halloween" directory.
 3) Edit the code chunk below according to your own GitHub username, and then paste it line by line into the terminal (if you forgot to select "Create a git repository" when making your R project, don't worry!  Before you enter the code below, run `git init` to initialize the repo):
 
