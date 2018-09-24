@@ -51,7 +51,7 @@ To download and run the `download_data.R` script, you can enter the following co
 
 ```
 mkdir data
-curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/master/R_package/download_data.R > download_data.R
+curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/master/1_R_package/download_data.R > download_data.R
 Rscript download_data.R
 ```
 
@@ -70,7 +70,7 @@ Our "halloween" R package will contain one function: `plot_candy`.  This will ta
 The script containing the `plot_candy` function is *already written* and can be found in the `R_package` directory of this repo.  Run the following code in the terminal to download the code for yourself:
 
 ```
-curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/master/R_package/plot_candy.R > R/plot_candy.R
+curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/master/1_R_package/plot_candy.R > R/plot_candy.R
 ```
 
 Just like when we downloaded the data above, `curl` reads the R script from GitHub, and `>` saves the output into a script located in your local `R/` folder.
@@ -134,7 +134,7 @@ There are two ways to go about adding a `README` file.  The first is to click on
 Similar to how we downloaded the code for the R package from this tutorial's repo, we can download and push the `README` as well by running the following code from the command line:
 
 ```
-curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/master/GitHub_pages/package_README.md > README.md
+curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/master/2_GitHub_pages/package_README.md > README.md
 git add README.md
 git commit -m 'added README'
 git push
