@@ -117,17 +117,27 @@ git commit -m 'halloween package is functional'
 git push
 ```
 
-You have now successfully created an R package and pushed it to GitHub! :tada:
+You have now successfully created an R package and pushed it to GitHub! :tada: You can go ahead and close the project now.
 
 ----------
 
 ## Make a website for your R package
+Now that we have created our R package, we can now create a webpage for it using **GitHub pages**.  GitHub Pages takes the README of a repo and generates a website from it.  Websites for R packages can be incredibly useful for highlighting features of a package and easily marketing the package to its potential users.  We'll now walk through the steps to creating a webpage for our "halloween" R package:
 
-1. Add a README to your "halloween" repo.  You can find a pre-written README *here* (insert link, after writing the README) (*Use the code from above to download the README into a file in your local directory!*)
-2. Go to the "halloween" repo settings
-3. Under the section "GitHub Pages," select "master branch" as the source
-4. Choose a theme for your website.
-5. Go to the link and check out your R package's website!
+#### 1. Add a README.md
+You may have noticed that our R package's repo thus far does not have a README. READMEs are *super* important to include with any repo in order to inform readers of any important details they should know for installing/using/modifying your code.  At the bottom of the repo's Code page, you'll notice an option to create a README for your repo:  
+
+<img src="figures/make_readme.png" width="500">
+
+There are two ways to go about adding a README file.  The first is to click on this button, manually type in the text, and click "Commit new file."  The other option is to create a new `.md` file locally in your "halloween" directory, add the new file and push it from the command line.  Whichever you prefer is fine!  For convenience, though, you can find a pre-written README *here* (insert link, after writing the README).
+
+#### 2. Turn the README.md into a webpage
+
+1. Go to the "halloween" repo settings
+2. Under the section "GitHub Pages," select "master branch" as the source
+3. Choose a theme for your website.
+
+You did it! Now go to the link and check out your R package's website!
 
 ----------
 
