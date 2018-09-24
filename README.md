@@ -109,7 +109,7 @@ Imports:
 It's now time to **test and build the package!**  Run `devtools::check(document = FALSE)` to check the R package.  If there are 0 errors, then you can build the package by pressing `Command` + `Shift` + `B`.  The "halloween" package should now be loaded and functional!
 
 #### 6. Push the R Package to GitHub!
-There are two ways to do this: in RStudio (in the 'Git' panel), or in the terminal.  To push the package to GitHub, execute the following commands:
+There are two ways to do this: in RStudio (in the 'Git' panel), or in the terminal.  To push the package to GitHub in the terminal, execute the following commands:
 
 ```
 git add .
