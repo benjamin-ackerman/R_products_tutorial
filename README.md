@@ -129,7 +129,9 @@ You may have noticed that our R package's repo thus far does not have a `README`
 
 <img src="figures/make_readme.png" width="700">
 
-There are two ways to go about adding a `README` file.  The first is to click on this button, manually type in the text, and click "Commit new file."  The other option is to create a new `.md` file locally in your "halloween" directory, add the new file using git and push it from the command line.  For convenience, you can find a pre-written README [*here*](https://github.com/benjamin-ackerman/R_products_tutorial/blob/master/GitHub_pages/package_README.md).  Similar to how we downloaded the code for the R package from this tutorial's repo, we can download and push the `README` as well by running the following code from the command line:
+There are two ways to go about adding a `README` file.  The first is to click on this button, manually type in the text, and click "Commit new file."  The other option is to create a new `.md` file locally in your "halloween" directory, add the new file using git and push it from the command line.  For convenience, you can find a pre-written README [*here*](https://github.com/benjamin-ackerman/R_products_tutorial/blob/master/GitHub_pages/package_README.md).
+
+Similar to how we downloaded the code for the R package from this tutorial's repo, we can download and push the `README` as well by running the following code from the command line:
 
 ```
 curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/master/GitHub_pages/package_README.md > README.md
