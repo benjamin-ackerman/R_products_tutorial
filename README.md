@@ -75,7 +75,7 @@ curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/mas
 
 Just like when we downloaded the data above, `curl` reads the R script from GitHub, and `>` saves the output into a script located in your local `R/` folder.
 
-**Optional** If you would like to also get rid of the "hello.R" function, you can also do so from the command line by entering the following:
+**Optional:** If you would like to also get rid of the "hello.R" function, you can also do so from the command line by entering the following:
 
 ```
 rm R/hello.R
