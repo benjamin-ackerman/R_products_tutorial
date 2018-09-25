@@ -220,11 +220,11 @@ curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/mas
 
 Now let's break down what's happening in each of the scripts:
 
-__**`ui.R`**__
+##### `ui.R`
 Below is a screenshot of the `ui.R` script we will be using.  
 
 
-__**`server.R`**__
+##### `server.R`
 
 #### 4. Run the app to see what it looks like
 
