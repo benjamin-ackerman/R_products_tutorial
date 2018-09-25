@@ -214,9 +214,8 @@ devtools::install_github("[USERNAME]/halloween")
 
 #### 5. Publish the app to share with the world!
 
-1. Make account on shinyapps.io (log in through GitHub)
-2. Connect account to RStudio:
-
+1. Make account on [shinyapps.io](http://www.shinyapps.io/) (log in through your GitHub account!)
+2. Connect your shinyapps.io account to RStudio by following the following steps in RStudio:
 
 <img src="figures/publish_app.png" width="500">
 
