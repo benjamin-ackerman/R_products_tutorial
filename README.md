@@ -173,3 +173,32 @@ https://[USERNAME].github.io/halloween/
 ----------
 
 ## Make a Shiny app using your R package
+
+Last but not least, it's time to make a Shiny app to visualize the halloween candy ranking data!  Shiny apps are great tools that allow users to explore and interact with data with ease.  We're going to use the "halloween" R package to make an app where users can visualize the top-ranked candies by different candy characteristics (i.e. flavor, candy form, etc).  
+
+#### 1. Create an R Shiny Project
+Similar to when we created the R Project for the "halloween" package, we will now create a new project for this Shiny app:
+
+1) Open RStudio and select "New R Project" in the drop down menu in the top right corner of the window
+2) Select "New Directory"
+3) Select "Shiny Web Application"
+
+<img src="figures/new_shiny_app.png" width="500">
+
+4) Name your Shiny app **halloween_viz** (which will also be the name of the local folder housing the Shiny app files), and specify where you want this new directory to live locally.
+
+You'll notice that two files were created in this new project directory: `ui.R` and `server.R`.  `ui.R` will define how the web app appears to the user (i.e. the title, content, and fields for users to make inputs/selections).  `server.R` will define the objects that get included on the web app's page, which are *reactive* to the user's inputs (i.e. plots, text).
+
+I have created `server.R` and `ui.R` scripts that we will use to generate the Shiny app.  They can be found [here](https://github.com/benjamin-ackerman/R_products_tutorial/tree/master/3_R_shiny).
+
+#### 2. Install the "halloween" package
+Since we will be using our new "halloween" package, we will have to first download it from our respective GitHub repos!
+
+1. Load the `devtools` package in R (`library(devtools)`)
+2. Install the package using the `install_github()` function (don't forget to insert your GitHub username below!)
+
+```
+devtools::install_github("[USERNAME]/halloween")
+```
+
+#### 3. Fill in the `ui.R` and `server.R` scripts
