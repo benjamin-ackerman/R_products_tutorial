@@ -117,7 +117,7 @@ If there are 0 errors, then you can build the package by pressing `Command` + `S
 #### 6. Push the R Package to GitHub!
 At this point, your "halloween" local folder should have all of the following files:
 
-<img src="figures/package_files.png" width="300">
+<img src="figures/package_files.png" width="150">
 
 Now that all of the package necessities are complete, it's time to push the package to GitHub, so that it can be downloaded by its future users.  There are two ways to do this: in RStudio (in the 'Git' panel), or in the terminal.
 
