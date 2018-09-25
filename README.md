@@ -194,7 +194,12 @@ I have created `server.R` and `ui.R` scripts that we will use to generate the Sh
 #### 2. Install the "halloween" package
 Since we will be using our new "halloween" package, we will have to first download it from our respective GitHub repos!
 
-1. Load the `devtools` package in R (`library(devtools)`)
+1. Load the `devtools` package in R 
+
+```
+library(devtools)
+```
+
 2. Install the package using the `install_github()` function (don't forget to insert your GitHub username below!)
 
 ```
