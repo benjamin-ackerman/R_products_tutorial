@@ -185,7 +185,7 @@ Similar to when we created the R Project for the "halloween" package, we will no
 
 <img src="figures/new_shiny_app.png" width="500">
 
-4) Name your Shiny app **halloween_viz** (which will also be the name of the local folder housing the Shiny app files), and specify where you want this new directory to live locally.
+4) Name your Shiny app **halloween_vis** (which will also be the name of the local folder housing the Shiny app files), and specify where you want this new directory to live locally.
 
 You'll notice that two files were created in this new project directory: `ui.R` and `server.R`.  `ui.R` will define how the web app appears to the user (i.e. the title, content, and fields for users to make inputs/selections).  `server.R` will define the objects that get included on the web app's page, which are *reactive* to the user's inputs (i.e. plots, text).
 
