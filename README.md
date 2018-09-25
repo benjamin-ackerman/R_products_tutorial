@@ -174,7 +174,9 @@ https://[USERNAME].github.io/halloween/
 
 ## Make a Shiny app using your R package
 
-Last but not least, it's time to make a Shiny app to visualize the halloween candy ranking data!  Shiny apps are great tools that allow users to explore and interact with data with ease.  We're going to use the "halloween" R package to make an app where users can visualize the top-ranked candies by different candy characteristics (i.e. flavor, candy form, etc).  
+Last but not least, it's time to make a Shiny app to visualize the halloween candy ranking data!  Shiny apps are great tools that allow users to explore and interact with data with ease.  Check out [this gallery](http://shiny.rstudio.com/gallery/) for some cool examples of Shiny apps, and to get a better sense of the full extent to which you can use Shiny for impactful communication.  
+
+We're going to use the "halloween" R package to make a fairly simple app where users can visualize the top-ranked candies by different candy characteristics (i.e. flavor, candy form, etc).  
 
 #### 1. Create an R Shiny Project
 Similar to when we created the R Project for the "halloween" package, we will now create a new project for this Shiny app:
