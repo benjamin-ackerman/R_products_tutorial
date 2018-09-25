@@ -176,7 +176,7 @@ https://[USERNAME].github.io/halloween/
 
 Last but not least, it's time to make a Shiny app to visualize the halloween candy ranking data!  Shiny apps are great tools that allow users to explore and interact with data with ease.  Check out [this gallery](http://shiny.rstudio.com/gallery/) for some cool examples of Shiny apps, and to get a better sense of the full extent to which you can use Shiny for impactful communication.  
 
-We're going to use the "halloween" R package to make a fairly simple app where users can visualize the top-ranked candies by different candy characteristics (i.e. flavor, candy form, etc).  
+We're going to use the "halloween" R package to make a fairly simple app to visualize the top-ranked candies, where a user can easily subset the data by different characteristics (i.e. flavor, pieces vs. bar, number of top candies, etc).  
 
 #### 1. Create an R Shiny Project
 Similar to when we created the R Project for the "halloween" package, we will now create a new project for this Shiny app:
@@ -189,9 +189,11 @@ Similar to when we created the R Project for the "halloween" package, we will no
 
 4) Name your Shiny app **candy_vis** (which will also be the name of the local folder housing the Shiny app files), and specify where you want this new directory to live locally.
 
-You'll notice that two files were created in this new project directory: `ui.R` and `server.R`.  `ui.R` will define how the web app appears to the user (i.e. the title, content, and fields for users to make inputs/selections).  `server.R` will define the objects that get included on the web app's page, which are *reactive* to the user's inputs (i.e. plots, text).
+You'll notice that two files were created in this new project directory: `ui.R` and `server.R`:
+- `ui.R` will define how the web app appears to the user (i.e. the title, content, and fields for users to make inputs/selections)
+- `server.R` will define the objects that get included on the web app's page, which are *reactive* to the user's inputs (i.e. plots, text).
 
-I have created `server.R` and `ui.R` scripts that we will use to generate the Shiny app.  They can be found [here](https://github.com/benjamin-ackerman/R_products_tutorial/tree/master/3_R_shiny).
+I have created `server.R` and `ui.R` scripts that we will use to generate the Shiny app.  They can be found [here](https://github.com/benjamin-ackerman/R_products_tutorial/tree/master/3_R_shiny), and we will pull from them shortly!
 
 #### 2. Install the "halloween" package
 Since we will be using our new "halloween" package, we will have to first download it from our respective GitHub repos!
@@ -202,13 +204,27 @@ Since we will be using our new "halloween" package, we will have to first downlo
 library(devtools)
 ```
 
-2. Install the package using the `install_github()` function (don't forget to insert your GitHub username below!)
+2. Install the package using the `install_github()` function (don't forget to replace '[USERNAME]' with your real GitHub username below!)
 
 ```
 devtools::install_github("[USERNAME]/halloween")
 ```
 
 #### 3. Fill in the `ui.R` and `server.R` scripts
+We will now add the necessary code to each of the files to make our Shiny app functional.  Like in the tutorials above, you can either copy and paste the code manually from the [individual R scripts](https://github.com/benjamin-ackerman/R_products_tutorial/tree/master/3_R_shiny) into your local `ui.R` and `server.R` scripts, or you can pull the files directly from GitHub on the command line using the following code (*make sure you direct to the 'candy_vis' folder on your machine before executing these commands!*):
+
+```
+curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/master/3_R_shiny/ui.R > ui.R
+curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/master/3_R_shiny/server.R > server.R
+```
+
+Now let's break down what's happening in each of the scripts:
+
+##### `ui.R`
+Below is a screenshot of the `ui.R` script we will be using.  
+
+
+##### `server.R`
 
 #### 4. Run the app to see what it looks like
 
