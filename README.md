@@ -42,7 +42,7 @@ git push -u origin master
 Double check on the GitHub website to verify that the files have been pushed!
 
 #### 3. Download data for the R package
-Keep the terminal window open and in the "halloween" directory.  Let's download the data that we'll be using!  In order to actually attach the data file to the R package, we will need to save the data locally as a .RData file in the `data/` folder.  I've written an [R script](https://github.com/benjamin-ackerman/R_products_tutorial/blob/master/1_R_package/download_data.R) (located in the `R_package` directory of this repo) that does the following:
+Keep the terminal window open and in the "halloween" directory.  Let's download the data that we'll be using!  In order to actually attach the data file to the R package, we will need to save the data locally as a .RData file in the `data/` folder.  I've written an R script (found [here](https://github.com/benjamin-ackerman/R_products_tutorial/blob/master/1_R_package/download_data.R)) that does the following:
 
 1) Reads in the .csv file from FiveThirtyEight's GitHub Repo into R
 2) Saves the data frame as a .RData object in the `data/` directory of the package.
@@ -67,7 +67,7 @@ Now check to make sure there's a file called `candy_data.RData` in your local `d
 #### 4. Add the necessary R function to the package
 Our "halloween" R package will contain one function: `plot_candy`.  This will take in a data frame, the number of top candies to plot, and the names of the columns specifying the candy name and ranking, and will produce a barplot from `ggplot` with the top ranked candies.
 
-The script containing the `plot_candy` function is *already written* and can be found in the `R_package` directory of this repo.  Again, you can either copy and paste the code from GitHub into a new R script in the "R" folder called "plot_candy.R", or you can run the following code in the terminal to automatically download the code:
+The script containing the `plot_candy` function is *already written* and can be found [here](https://github.com/benjamin-ackerman/R_products_tutorial/blob/master/1_R_package/plot_candy.R).  Again, you can either copy and paste the code from GitHub into a new R script in the "R" folder called "plot_candy.R", or you can run the following code in the terminal to automatically download the code:
 
 ```
 curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/master/1_R_package/plot_candy.R > R/plot_candy.R
