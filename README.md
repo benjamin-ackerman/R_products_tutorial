@@ -28,26 +28,26 @@ Let's start by creating a new local folder with an R package project:
 #### 2. Create a new GitHub repo
 Create a GitHub repository online and link it to the local directory of the R project.  You can do so by following the steps in [this GitHub help page](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/), or by following these condensed steps: 
 
-1) Create a new repo called "halloween" (do *not* add a `README` or a .gitignore)
+1) Log in to GitHub and create a new repo called "halloween" (do *not* add a `README` or a .gitignore)
 2) Open a new Terminal/Git Bash console on your computer and make your way into your local "halloween" directory.
 3) Edit the code chunk below according to your own GitHub username, and then paste it line by line into the terminal (if you forgot to select "Create a git repository" when making your R project, don't worry!  Before you enter the code below, run `git init` to initialize the repo):
 
 ```
 git add .
 git commit -m "first commit"
-git remote add origin git@github.com:[YOUR-USERNAME]/halloween.git
+git remote add origin git@github.com:[USERNAME]/halloween.git
 git push -u origin master
 ```
 
 Double check on the GitHub website to verify that the files have been pushed!
 
 #### 3. Download data for the R package
-Keep the terminal window open and in the "halloween" directory.  Let's download the data that we'll be using!  In order to actually attach the data file to the R package, we will need to save the data locally as a .RData file in the `data/` folder.  I've written an R script located in the `R_package` directory of this repo that does the following:
+Keep the terminal window open and in the "halloween" directory.  Let's download the data that we'll be using!  In order to actually attach the data file to the R package, we will need to save the data locally as a .RData file in the `data/` folder.  I've written an [R script](https://github.com/benjamin-ackerman/R_products_tutorial/blob/master/1_R_package/download_data.R) (located in the `R_package` directory of this repo) that does the following:
 
 1) Reads in the .csv file from FiveThirtyEight's GitHub Repo into R
 2) Saves the data frame as a .RData object in the `data/` directory of the package.
 
-To download and run the `download_data.R` script, you can enter the following code into the command line:
+You can either copy and paste the code from GitHub and run it manually in RStudio, or you can download and run the `download_data.R` script by following code into the command line:
 
 ```
 mkdir data
@@ -55,19 +55,19 @@ curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/mas
 Rscript download_data.R
 ```
 
-The code above does the following: 
+Let's break down what the code above does!
 
 1) `mkdir` creates a new directory within "halloween" called "data"
 2) `curl` reads the R script from this repo
-3) `>` funnels the output into a local file on your computer called 'download_data.R'. *A note for PC users:* you may need to use `wget` instead of `curl`.
-4) `Rscript` executes the script `download_data.R` from the command line (if this line doesn't work, you can open the R script manually in RStudio and run the commands).
+3) `>` funnels the output into a local file on your computer called 'download_data.R'. *A note for PC users:* you may need to use `wget` instead of `curl`
+4) `Rscript` executes the script `download_data.R` from the command line
 
-Now check to make sure there's a file called `candy_data.RData` in your local `data/` folder!  If it's there, you can remove `download_data.R` from your project folder (you can do so by entering `rm download_data.R` into the terminal console).
+Now check to make sure there's a file called `candy_data.RData` in your local `data/` folder!  If you downloaded the R script `download_data.R`, you can remove it now from your project folder (run `rm download_data.R` into the terminal console).
 
 #### 4. Add the necessary R function to the package
 Our "halloween" R package will contain one function: `plot_candy`.  This will take in a data frame, the number of top candies to plot, and the names of the columns specifying the candy name and ranking, and will produce a barplot from `ggplot` with the top ranked candies.
 
-The script containing the `plot_candy` function is *already written* and can be found in the `R_package` directory of this repo.  Run the following code in the terminal to download the code for yourself:
+The script containing the `plot_candy` function is *already written* and can be found in the `R_package` directory of this repo.  Again, you can either copy and paste the code from GitHub into a new R script in the "R" folder called "plot_candy.R", or you can run the following code in the terminal to automatically download the code:
 
 ```
 curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/master/1_R_package/plot_candy.R > R/plot_candy.R
@@ -87,16 +87,16 @@ Check to make sure that the script `plot_candy.R` is in the `R/` directory of yo
 #### 5. Add documentation and build package
 Now that the R function and the data are added to the project, it's time to add documentation!
 
-First, let's add documentation for the `plot_candy` function.  Notice that in the beginning of the `plot_candy.R` script, there is a section of code where every line starts with `#'`.  This section of the code actually *contains* the documentation for the function - all we have to do is generate the .Rd file!  In RStudio, we will follow these steps:
+First, let's add documentation for the `plot_candy` function.  Notice that in the beginning of the `plot_candy.R` script, there is a section of code where every line starts with `#'`.  This section of the code actually *contains* the documentation for the function - all we have to do is generate the `.Rd` file in the "man" directory!  In RStudio, we will follow these steps:
 
 1) Load the `devtools` package
 2) Run the following code in the R console: `devtools::document()`
 
-There should now be a file in the `man/` folder called "plot_candy.Rd" (there will also be some code added to the 'NAMESPACE' file, but don't worry about that for now.)
+There should now be a file in the `man/` folder called "plot_candy.Rd" (there will also be some code added to the 'NAMESPACE' file, but don't worry about that for now).
 
 Next, let's add documentation for the package in the 'DESCRIPTION' file:
 
-1) Open 'DESCRIPTION' file in RStudio
+1) Open the 'DESCRIPTION' file (either in RStudio or your preferred text editor)
 2) Add a title, your name, and a short description of the package in the appropriate fields
 3) Add the following chunk of code at the end of the file to make sure that the necessary R packages are imported:
 
@@ -106,10 +106,22 @@ Imports:
     ggplot2
 ```
 
-It's now time to **test and build the package!**  Run `devtools::check(document = FALSE)` to check the R package.  If there are 0 errors, then you can build the package by pressing `Command` + `Shift` + `B`.  The "halloween" package should now be loaded and functional!
+It's now time to **test and build the package!**  To do so, run the following command in RStudio:
+
+```
+devtools::check(document = FALSE)
+```
+
+If there are 0 errors, then you can build the package by pressing `Command` + `Shift` + `B`.  The "halloween" package should now be loaded and functional!
 
 #### 6. Push the R Package to GitHub!
-There are two ways to do this: in RStudio (in the 'Git' panel), or in the terminal.  To push the package to GitHub in the terminal, execute the following commands:
+At this point, your "halloween" local folder should have all of the following files:
+
+<img src="figures/package_files.png" width="500">
+
+Now that all of the package necessities are complete, it's time to push the package to GitHub, so that it can be downloaded by its future users.  There are two ways to do this: in RStudio (in the 'Git' panel), or in the terminal.
+
+To push the package to GitHub in the terminal, execute the following commands:
 
 ```
 git add .
