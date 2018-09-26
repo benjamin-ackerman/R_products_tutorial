@@ -106,13 +106,13 @@ Imports:
     ggplot2
 ```
 
-It's now time to **test and build the package!**  To do so, run the following command in RStudio:
+It's now time to **test the package!**  To do so, run the following command in RStudio:
 
 ```
 devtools::check(document = FALSE)
 ```
 
-If there are 0 errors, then you can build the package by pressing `Command` + `Shift` + `B`.  The "halloween" package should now be loaded and functional!
+If there are 0 errors, then you can **build the package** by pressing `Command` + `Shift` + `B`.  The "halloween" package should now be loaded and functional!
 
 #### 6. Push the R Package to GitHub!
 At this point, your "halloween" local folder should have all of the following files:
@@ -218,7 +218,7 @@ curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/mas
 curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/master/3_R_shiny/server.R > server.R
 ```
 
-Now let's break down what's happening in each of the scripts:
+Before we go ahead and deploy the Shiny app, let's break down what's happening in each of the scripts:
 
 ##### `ui.R`
 Below is a screenshot of the `ui.R` script we will be using, with some annotations.  
