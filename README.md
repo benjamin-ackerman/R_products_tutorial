@@ -238,9 +238,12 @@ A few things to notice about the `server.R` script:
 - The object `candyplot` is created using `renderPlot()` based on the selected input values. It is then plotted using `plotOutput()` in `ui.R`.  **In general, elements created using a `render___()` function in `server.R` will be brought to life by a corresponding `___Output()` function in `ui.R`** 
 
 #### 4. Run the app to see what it looks like
-Now that the `ui.R` and `server.R` files are complete, it's time to run the Shiny app!  
+Now that the `ui.R` and `server.R` files are complete, click on the "Run App" button to test out your Shiny app!
+
+<img src="figures/run_app.png" width="500">
 
 #### 5. Publish the app to share with the world!
+In order to share your Shiny app with others, you'll have to publish the app.  There are several ways to go about doing this - we are going to use shinyapps.io to host our app.  For more information information on the different available plans for hosting apps on shinyapps.io, check out [this website]().  For now, we're just going to use the basic free plan, which allows for 25 active hours per app.
 
 1. Make account on [shinyapps.io](http://www.shinyapps.io/) (log in through your GitHub account!)
 2. To connect your shinyapps.io account to RStudio, start by following these steps in RStudio:
