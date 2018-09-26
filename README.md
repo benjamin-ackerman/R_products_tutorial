@@ -60,7 +60,13 @@ Let's break down what the code above does!
 1) `mkdir` creates a new directory within "halloween" called "data"
 2) `curl` reads the R script from this repo 
 3) `>` funnels the output into a local file on your computer called 'download_data.R'.
-4) `Rscript` executes the script `download_data.R` from the command line (**Windows Users**: if you get an error that the `Rscript` command can't be found, then you may need to add the location of `Rscript.exe` to your path.  Once you locate where the file lives, you can do so by executing the following command in Git Bash: `export PATH="PATH:[insert path to Rscript.exe]"`)
+4) `Rscript` executes the script `download_data.R` from the command line* 
+
+* *Windows Users*: if you get an error that the `Rscript` command can't be found, then you may need to add the location of `Rscript.exe` to your path.  Once you locate where the file lives, you can do so by executing the following command in Git Bash: 
+
+```
+export PATH="PATH:[insert path to Rscript.exe]"
+```
 
 Now check to make sure there's a file called `candy_data.RData` in your local `data/` folder!  If you downloaded the R script `download_data.R`, you can remove it now from your project folder (run `rm download_data.R` into the terminal console).
 
