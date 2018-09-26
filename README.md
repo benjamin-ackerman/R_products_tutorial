@@ -240,6 +240,10 @@ Now that the `ui.R` and `server.R` files are complete, click on the "Run App" bu
 
 <img src="figures/run_app.png" width="700">
 
+Clicking "Run App" should load a page in your browser that looks like this:
+
+<img src="figures/shiny_screenshot.png" width="600">
+
 #### 5. Publish the app to share with the world!
 In order to share your Shiny app with others, you'll have to publish the app.  There are several ways to go about doing this, but we are going to use [shinyapps.io](http://www.shinyapps.io/) to deploy our app:
 
