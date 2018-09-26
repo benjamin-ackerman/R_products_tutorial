@@ -240,7 +240,7 @@ A few things to notice about the `server.R` script:
 #### 4. Run the app to see what it looks like
 Now that the `ui.R` and `server.R` files are complete, click on the "Run App" button to test out your Shiny app!
 
-<img src="figures/run_app.png" width="500">
+<img src="figures/run_app.png" width="700">
 
 #### 5. Publish the app to share with the world!
 In order to share your Shiny app with others, you'll have to publish the app.  There are several ways to go about doing this - we are going to use shinyapps.io to host our app.  For more information information on the different available plans for hosting apps on shinyapps.io, check out [this website]().  For now, we're just going to use the basic free plan, which allows for 25 active hours per app.
