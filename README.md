@@ -131,7 +131,9 @@ git commit -m 'halloween package is functional'
 git push
 ```
 
-You have now successfully created an R package and pushed it to GitHub! :tada: You can go ahead and close the project now.
+Check GitHub to see that your code has been pushed.
+
+You have now successfully created an R package and pushed it to GitHub! :tada: You can go ahead and close the "halloween" R package project.
 
 ----------
 
