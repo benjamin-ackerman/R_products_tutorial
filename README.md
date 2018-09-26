@@ -238,6 +238,8 @@ Below is a screenshot of the `ui.R` script we will be using, with some annotatio
 
 <img src="figures/connect_account2.png" width="500">
 
+Follow the prompted instructions to add create and copy a token from shinyapps.io into RStudio:
+
 <img src="figures/connect_account3.png" width="500">
 
 3. Go back to the "Publish to Server" screen, make sure that both `.R` files are selected, and hit "Publish!"
