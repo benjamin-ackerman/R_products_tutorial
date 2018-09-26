@@ -222,7 +222,7 @@ curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/mas
 
 Before we go ahead and deploy the Shiny app, let's break down what's happening in each of the scripts:
 
-<img src="figures/shiny_annotated.png" width="650">
+<img src="figures/shiny_annotated.png" width="850">
 
 In the `ui.R` script:
 - `sidebarLayout()` is what defines that this webpage will have a sidebar where users can make selections and a main panel where text and figures (that react based on the selections) will live.
