@@ -237,6 +237,7 @@ Now let's take a look at the `server.R` script:
 - `renderPlot()` generates a plot object Bbsed on the selected values for the inputs, and saves it in the `output` list as 'candyplot.'  Just as in `ui.R`, you can think of `server.R` as creating an `output` list with all objects that will be formatted and included in the webpage.  *Remember that the objects in `output` are reactive to the inputs from `ui.R`!*
 
 #### 4. Run the app to see what it looks like
+Now that the `ui.R` and `server.R` files are complete, it's time to run the Shiny app!  
 
 #### 5. Publish the app to share with the world!
 
