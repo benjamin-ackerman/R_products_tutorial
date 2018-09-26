@@ -226,8 +226,8 @@ Before we go ahead and deploy the Shiny app, let's break down what's happening i
 
 In the `ui.R` script:
 - `sidebarLayout()` is what defines that this webpage will have a sidebar where users can make selections and a main panel where text and figures (that react based on the selections) will live.
-- `sliderInput()` and `checkboxInput()` define elements of the sidebar where the user can change parameters, altering what gets displayed in the main panel.  Essentially, each function formatted as `___Input()` defines a different way of specifying a parameter that the user can vary (i.e. checkbox, slider, free text field).  For each `___Input()` element, `ui.R` adds a corresponding object to a list called `input`, which contain the values that go into changing the output in the main panel.
-- `plotOutput()` formats a plot object ('candyplot') that's contained in the `output` list created in the `server.R` script (see below).
+- `sliderInput()` and `checkboxInput()` define elements of the sidebar where the user can make selections that alter what gets displayed in the main panel.  Each function formatted as `___Input()` defines a different way of specifying a parameter that the user can vary (i.e. checkbox, slider, free text field).  For each `___Input()` element, `ui.R` adds a corresponding object to a list called `input`, which contain the actual values that are communicated to `server.R`.
+- `plotOutput()` formats a plot object ('candyplot') that's created in `server.R` (see below).
 
 In the `server.R` script:
 - Elements that were specified in `___Input()` functions in the `ui.R` script are here referenced as `input$n` and `input$bar`.  This is what makes the Shiny app *reactive* to user inputs!
