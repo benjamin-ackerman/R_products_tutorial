@@ -222,20 +222,14 @@ curl https://raw.githubusercontent.com/benjamin-ackerman/R_products_tutorial/mas
 
 Before we go ahead and deploy the Shiny app, let's break down what's happening in each of the scripts:
 
-##### `ui.R`
-Below is a screenshot of the `ui.R` script we will be using, with some annotations.  
+<img src="figures/shiny_annotated.png" width="650">
 
-<img src="figures/ui_annotated.png" width="650">
-
-Notice a few features of the `ui.R` script:
+In the `ui.R` script:
 - `sidebarLayout()` is what defines that this webpage will have a sidebar where users can make selections and a main panel where text and figures (that react based on the selections) will live.
 - `sliderInput()` and `checkboxInput()` define elements of the sidebar where the user can change parameters, altering what gets displayed in the main panel.  Essentially, each function formatted as `___Input()` defines a different way of specifying a parameter that the user can vary (i.e. checkbox, slider, free text field).  For each `___Input()` element, `ui.R` adds a corresponding object to a list called `input`, which contain the values that go into changing the output in the main panel.
 - `plotOutput()` formats a plot object ('candyplot') that's contained in the `output` list created in the `server.R` script (see below).
 
-##### `server.R`
-Below is a screenshot of the `server.R` script we will be using.
-
-A few things to notice about the `server.R` script:
+In the `server.R` script:
 - Elements that were specified in `___Input()` functions in the `ui.R` script are here referenced as `input$n` and `input$bar`.  This is what makes the Shiny app *reactive* to user inputs!
 - The object `candyplot` is created using `renderPlot()` based on the selected input values. It is then plotted using `plotOutput()` in `ui.R`.  **In general, elements created using a `render___()` function in `server.R` will be brought to life by a corresponding `___Output()` function in `ui.R`** 
 
