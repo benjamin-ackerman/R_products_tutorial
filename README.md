@@ -62,7 +62,7 @@ Let's break down what the code above does!
 3) `>` funnels the output into a local file on your computer called 'download_data.R'.
 4) `Rscript` executes the script `download_data.R` from the command line* 
 
-* *Windows Users*: if you get an error that the `Rscript` command can't be found, then you may need to add the location of `Rscript.exe` to your path.  Once you locate where the file lives, you can do so by executing the following command in Git Bash: 
+**Windows Users*: if you get an error that the `Rscript` command can't be found, then you may need to add the location of `Rscript.exe` to your path.  Once you locate where the file lives, you can do so by executing the following command in Git Bash: 
 
 ```
 export PATH="PATH:[insert path to Rscript.exe]"
