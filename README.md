@@ -225,14 +225,16 @@ Below is a screenshot of the `ui.R` script we will be using, with some annotatio
 
 <img src="figures/ui_annotated.png" width="650">
 
-A few things to notice here:
 - `sidebarLayout()` is what defines that this webpage will have a sidebar where users can make selections and a main panel where text and figures (that react based on the selections) will live.
 - `sliderInput()` and `checkboxInput()` define components of the Shiny app where the user can change parameters and alter what gets displayed in the main panel.  Essentially, each function that is formatted as `___Input()` defines one parameter that the user can vary.  A useful way to think about what's going on is that the two `Input()` functions here are writing the following code: `input = list('n' = 10, 'bar' = FALSE)`.
 The values for each item in the `input` list are then communicated to the `server.R` script, where the output objects are created.  If a user moves the slider bar, or selects the check box, then the values for the items in the `input` list will change, meaning the output objects will change accordingly.
-- `plotOutput()` formats a plot object that's contained in the `output` list created in the `server.R` script (see below).
+- `plotOutput()` formats a plot object ('candyplot') that's contained in the `output` list created in the `server.R` script (see below).
 
 ##### `server.R`
+Now let's take a look at the `server.R` script:
 
+- Notice that the items specified as 'inputs' in the `ui.R` script are here referenced as `input$n` and `input$bar`.
+- `renderPlot()` generates a plot object Bbsed on the selected values for the inputs, and saves it in the `output` list as 'candyplot.'  Just as in `ui.R`, you can think of `server.R` as creating an `output` list with all objects that will be formatted and included in the webpage.  *Remember that the objects in `output` are reactive to the inputs from `ui.R`!*
 
 #### 4. Run the app to see what it looks like
 
