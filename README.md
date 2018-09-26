@@ -231,7 +231,7 @@ In the `ui.R` script:
 
 In the `server.R` script:
 - Elements that were specified in `___Input()` functions in the `ui.R` script are here referenced as `input$n` and `input$bar`.  This is what makes the Shiny app *reactive* to user inputs!
-- The object `candyplot` is created using `renderPlot()` based on the selected input values. It is then plotted using `plotOutput()` in `ui.R`.  **In general, elements created using a `render___()` function in `server.R` will be brought to life by a corresponding `___Output()` function in `ui.R`** 
+- The object `candyplot` is created using `renderPlot()` based on the selected input values. It is then plotted using `plotOutput()` in `ui.R`.  In general, elements created using a `render___()` function in `server.R` will be brought to life by a corresponding `___Output()` function in `ui.R`
 
 #### 4. Run the app to see what it looks like
 Now that the `ui.R` and `server.R` files are complete, click on the "Run App" button to test out your Shiny app!
