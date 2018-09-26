@@ -58,9 +58,9 @@ Rscript download_data.R
 Let's break down what the code above does!
 
 1) `mkdir` creates a new directory within "halloween" called "data"
-2) `curl` reads the R script from this repo
-3) `>` funnels the output into a local file on your computer called 'download_data.R'. *A note for PC users:* you may need to use `wget` instead of `curl`
-4) `Rscript` executes the script `download_data.R` from the command line
+2) `curl` reads the R script from this repo 
+3) `>` funnels the output into a local file on your computer called 'download_data.R'.
+4) `Rscript` executes the script `download_data.R` from the command line (**Windows Users**: if you get an error that the `Rscript` command can't be found, then you may need to add the location of `Rscript.exe` to your path.  Once you locate where the file lives, you can do so by executing the following command in Git Bash: `export PATH="PATH:[insert path to Rscript.exe]"`)
 
 Now check to make sure there's a file called `candy_data.RData` in your local `data/` folder!  If you downloaded the R script `download_data.R`, you can remove it now from your project folder (run `rm download_data.R` into the terminal console).
 
@@ -231,7 +231,7 @@ Notice a few features of the `ui.R` script:
 - `plotOutput()` formats a plot object ('candyplot') that's contained in the `output` list created in the `server.R` script (see below).
 
 ##### `server.R`
-Now let's take a look at the `server.R` script:
+Below is a screenshot of the `server.R` script we will be using.
 
 A few things to notice about the `server.R` script:
 - Elements that were specified in `___Input()` functions in the `ui.R` script are here referenced as `input$n` and `input$bar`.  This is what makes the Shiny app *reactive* to user inputs!
