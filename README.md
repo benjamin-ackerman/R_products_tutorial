@@ -243,9 +243,10 @@ Now that the `ui.R` and `server.R` files are complete, click on the "Run App" bu
 <img src="figures/run_app.png" width="700">
 
 #### 5. Publish the app to share with the world!
-In order to share your Shiny app with others, you'll have to publish the app.  There are several ways to go about doing this - we are going to use shinyapps.io to host our app.  For more information information on the different available plans for hosting apps on shinyapps.io, check out [this website]().  For now, we're just going to use the basic free plan, which allows for 25 active hours per app.
+In order to share your Shiny app with others, you'll have to publish the app.  There are several ways to go about doing this, but we are going to use [shinyapps.io](http://www.shinyapps.io/) to deploy our app:
 
-1. Make account on [shinyapps.io](http://www.shinyapps.io/) (log in through your GitHub account!)
+1. Make an account on [shinyapps.io](http://www.shinyapps.io/) (for now, we're going to set up accounts under the free plan, which allows for 5 apps and 25 active hours (other plan options and their pricing are available at the bottom of their website)
+
 2. To connect your shinyapps.io account to RStudio, start by following these steps in RStudio:
 
 <img src="figures/connect_account1.png" width="500">
