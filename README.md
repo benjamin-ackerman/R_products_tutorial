@@ -42,7 +42,7 @@ git push -u origin master
 Double check on the GitHub website to verify that the files have been pushed!
 
 #### 3. Download data for the R package
-Keep the terminal window open and in the "halloween" directory.  Let's download the data that we'll be using!  In order to actually attach the data file to the R package, we will need to save the data locally as a .RData file in the `data/` folder.  I've written an R script (found [here](https://github.com/benjamin-ackerman/R_products_tutorial/blob/master/1_R_package/download_data.R)) that does the following:
+To download the data, keep the terminal window open and in the "halloween" directory.  In order to actually attach the data file to the R package, we will need to save the data locally as a .RData file in the `data/` folder.  I've written an R script (found [here](https://github.com/benjamin-ackerman/R_products_tutorial/blob/master/1_R_package/download_data.R)) that does the following:
 
 1) Reads in the .csv file from FiveThirtyEight's GitHub Repo into R
 2) Saves the data frame as a .RData object in the `data/` directory of the package.
