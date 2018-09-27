@@ -278,11 +278,11 @@ In order to share your Shiny app with others, you'll have to publish the app.  T
 
 Want to learn more about building R packages and Shiny apps? Here are some useful books, blog posts and tutorials to check out:
 
-##### R Packages:
+#### R Packages:
 - [R Packages book](http://r-pkgs.had.co.nz/) by Hadley Wickham
 - [This 2014 blog post](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/) by Hilary Parker
 - [R Package Primer](http://kbroman.org/pkg_primer/) by Karl Broman
 
-##### Shiny Apps:
+#### Shiny Apps:
 - [This video tutorial](https://shiny.rstudio.com/tutorial/) on RStudio's Shiny website (with *tons* of links to other helpful resources)
 - [The Shiny app gallery](https://shiny.rstudio.com/gallery/) filled with code and examples
