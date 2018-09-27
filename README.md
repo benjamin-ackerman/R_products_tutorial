@@ -9,6 +9,16 @@ This tutorial is designed for students enrolled in the JHSPH Biostat Department 
 The theme of this tutorial is **Halloween candy**! :jack_o_lantern: :candy: Using data from [this FiveThirtyEight blogpost](https://fivethirtyeight.com/features/the-ultimate-halloween-candy-power-ranking/), we will be building an R package and an accompanying Shiny app that visualizes the most popular candies (the rankings are done according to a series of pair-wise comparisons between candies - see the original blogpost for more details). 
 
 ----------
+## Before you start
+Make sure you have the following R packages installed:
+
+- `devtools`
+- `stats`
+- `RCurl`
+- `dplyr`
+- `ggplot2`
+
+----------
 
 ## Create an R package
 
