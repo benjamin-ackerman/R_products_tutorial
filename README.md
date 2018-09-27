@@ -276,7 +276,7 @@ In order to share your Shiny app with others, you'll have to publish the app.  T
 ----------
 ## Additional Resources
 
-Want to learn more about building R packages and Shiny apps? Here are some useful books and blogposts to check out:
+Want to learn more about building R packages and Shiny apps? Here are some useful books, blog posts and tutorials to check out:
 
 ##### R Packages:
 - [R Packages book](http://r-pkgs.had.co.nz/) by Hadley Wickham
