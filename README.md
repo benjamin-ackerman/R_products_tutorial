@@ -205,6 +205,8 @@ You'll notice that two files were created in this new project directory: `ui.R` 
 - `ui.R` will define how the web app appears to the user (i.e. the title, content, and fields for users to make inputs/selections)
 - `server.R` will define the objects that get included on the web app's page, which are *reactive* to the user's inputs (i.e. plots, text).
 
+**NOTE if you are using RStudio version 1.1.383 or later:** The latest RStudio defaults to using *one* R script, `app.R`, to construct Shiny apps.  If you create a project and just see `app.R` in the Source panel, **ignore it for the purpose of this tutorial** (the difference between the two formats is detailed [here](https://shiny.rstudio.com/articles/app-formats.html)).  We will be using the "older" Shiny format. You can delete the file by running `rm app.R` in the terminal. 
+
 I have created `server.R` and `ui.R` scripts that we will use to generate the Shiny app.  They can be found [here](https://github.com/benjamin-ackerman/R_products_tutorial/tree/master/3_R_shiny), and we will pull from them shortly!
 
 #### 2. Install the "halloween" package
