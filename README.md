@@ -255,7 +255,7 @@ In order to share your Shiny app with others, you'll have to publish the app.  T
 
 <img src="figures/connect_account3.png" width="500">
 
-3. Once you get to the screen above,, follow the prompted instructions within your shinyapps.io account to add create and copy a token into RStudio:
+3. Once you get to the screen above, follow the prompted instructions within your shinyapps.io account to add create and copy a token into RStudio:
 
 4. Go back to the "Publish to Server" screen, make sure that both `.R` files are selected, and hit "Publish!"
 
