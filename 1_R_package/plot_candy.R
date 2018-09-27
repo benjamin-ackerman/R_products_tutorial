@@ -17,7 +17,7 @@
 
 plot_candy = function(df, n = 10, candy_name_col, rank_col){
   p = ggplot(df %>% top_n(n, wt=get(rank_col))) +
-    geom_bar(aes(x = reorder(get(candy_name_col),get(rank_col)), y = get(rank_col)), stat="identity") +
+    geom_bar(aes(x = stats::reorder(get(candy_name_col),get(rank_col)), y = get(rank_col)), stat="identity") +
     coord_flip() +
     labs(x = candy_name_col, y = rank_col)
 
