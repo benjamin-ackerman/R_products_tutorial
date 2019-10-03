@@ -259,7 +259,7 @@ Clicking "Run App" should load a page in your browser that looks like this:
 
 <img src="figures/shiny_screenshot.png" width="600">
 
-#### LET'S PRACTICE! Can you make the app print out the name of the top candy in a sentence under the plot?
+#### LET'S PRACTICE! Can you make the app print out the name of the cheapest candy in a sentence under the plot?
 *Hint:* You will want to use the functions `renderText()` and `textOutput()` in the `server.R` and `ui.R` scripts, respectively!
 
 #### 5. Publish the app to share with the world!
