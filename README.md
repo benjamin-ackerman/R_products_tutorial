@@ -1,6 +1,6 @@
 # Advanced Data Science - R Products Tutorial
 
-Pre-tutorial slides can be found [here](https://docs.google.com/presentation/d/1zjdz1MYO2B1ZWYbVn-EWxBWvaIC7rsrgl0fyV0_dLOY/edit?usp=sharing)
+Pre-tutorial slides can be found [here](https://docs.google.com/presentation/d/1zjdz1MYO2B1ZWYbVn-EWxBWvaIC7rsrgl0fyV0_dLOY/edit?usp=sharing)!
 
 This tutorial is designed for students enrolled in the JHSPH Biostat Department required course "Advanced Data Science."  In this tutorial, we will
 
