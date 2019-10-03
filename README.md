@@ -296,5 +296,5 @@ Want to learn more about building R packages and Shiny apps? Here are some usefu
 - [The Shiny app gallery](https://shiny.rstudio.com/gallery/) filled with code and examples
 
 #### Blogdown Websites:
-- [Blogdown] book by Yihui Xie, Amber Thomas and Alison Hill
+- [Blogdown](https://bookdown.org/yihui/blogdown/) book by Yihui Xie, Amber Thomas and Alison Hill
 - [This tutorial](https://alison.rbind.io/post/2017-06-12-up-and-running-with-blogdown/) by [Alison Hill](https://alison.rbind.io/) is fantastic, and will have you up and running with a deployed website in an hour or less!
