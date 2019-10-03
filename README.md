@@ -148,7 +148,9 @@ You have now successfully created an R package and pushed it to GitHub! :tada: Y
 ## Make a website for your R package
 Now that we have created our R package, we can create a webpage for it using **GitHub pages**.  GitHub Pages takes the `README` of a repo and generates a website from it.  Websites for R packages can be incredibly useful for highlighting features of a package and for easily marketing the package to its potential users.  We'll now walk through the steps to creating a webpage for our "halloween" R package:
 
-#### 1. Add a README.md
+**If you are skipping the R Package section, please skip ahead to 1b.**
+
+#### 1a. Add a README.md
 You may have noticed that our R package's repo thus far does not have a `README`. `README` files are *super* important to include with any repo in order to inform readers of any details they should know for installing/using/modifying your code.  At the bottom of the repo's `Code` page, you'll notice an option to create a `README` for your repo:  
 
 <img src="figures/make_readme.png" width="700">
@@ -163,14 +165,17 @@ git add README.md
 git commit -m 'added README'
 git push
 ```
+*NOTE*: Make sure to replace all occurrences of '[USERNAME]' with your *actual* GitHub username!
 
-*NOTE*: once you download the `README`, make sure to replace all occurrences of '[USERNAME]' with your *actual* GitHub username.
+#### 1b. Fork the halloween R package from Github
+If you are skipping the tutorial section on creating the 'halloween' R package, please **fork** the halloween R package from [this repo](https://github.com/benjamin-ackerman/halloween). Forking the repo will create a replica of the package in your own account.
+
+*NOTE*: Make sure to replace all occurrences of '[USERNAME]' with your *actual* GitHub username!
 
 #### 2. Turn the README.md into a webpage
+Now we're going to turn the `README` into a webpage!
 
-Now that you have a `README` file, it's time to turn it into a webpage!
-
-1. On GitHub, go to the "halloween" repo settings
+1. On Github, go to the "halloween" repo settings
 2. Under the section "GitHub Pages," select "master branch" as the source and then click "Save"
 3. Choose a theme for your website
 
@@ -286,3 +291,6 @@ Want to learn more about building R packages and Shiny apps? Here are some usefu
 #### Shiny Apps:
 - [This video tutorial](https://shiny.rstudio.com/tutorial/) on RStudio's Shiny website (with *tons* of links to other helpful resources)
 - [The Shiny app gallery](https://shiny.rstudio.com/gallery/) filled with code and examples
+
+#### Blogdown Websites:
+- [This tutorial](https://alison.rbind.io/post/2017-06-12-up-and-running-with-blogdown/) by [Alison Hill](https://alison.rbind.io/) is fantastic, and will have you up and running with a deployed website in an hour or less!
